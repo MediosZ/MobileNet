@@ -30,7 +30,7 @@ from nets import resnet_v1
 from nets import resnet_v2
 from nets import vgg
 from nets import mobilenet
-from nets import mobilenetdet
+#from nets import mobilenetdet
 
 slim = tf.contrib.slim
 
@@ -54,8 +54,7 @@ networks_map = {'alexnet_v2': alexnet.alexnet_v2,
                 'resnet_v2_101': resnet_v2.resnet_v2_101,
                 'resnet_v2_152': resnet_v2.resnet_v2_152,
                 'resnet_v2_200': resnet_v2.resnet_v2_200,
-                'mobilenet': mobilenet.mobilenet,
-                'mobilenetdet': mobilenetdet.mobilenet
+                'mobilenet': mobilenet.mobilenet
                }
 
 arg_scopes_map = {'alexnet_v2': alexnet.alexnet_v2_arg_scope,
@@ -79,8 +78,7 @@ arg_scopes_map = {'alexnet_v2': alexnet.alexnet_v2_arg_scope,
                   'resnet_v2_101': resnet_v2.resnet_arg_scope,
                   'resnet_v2_152': resnet_v2.resnet_arg_scope,
                   'resnet_v2_200': resnet_v2.resnet_arg_scope,
-                  'mobilenet': mobilenet.mobilenet_arg_scope,
-                  'mobilenetdet': mobilenetdet.mobilenet_arg_scope
+                  'mobilenet': mobilenet.mobilenet_arg_scope
                  }
 
 
